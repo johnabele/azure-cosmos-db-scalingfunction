@@ -28,7 +28,7 @@ namespace SampleFunction
             try
             {
                 //1) initialize the document client
-                using (DocumentClient client = new DocumentClient(new Uri("https://jabcos.documents.azure.com:443/"), "0xS940aFzWH6dSwBzURaZ3iXe4BYg8HNmAwhnB49GJpJDXbCCHOTJcJCwyOzvYjJf3fRuh4dLMTqYy9wjZhCxg=="))
+                using (DocumentClient client = new DocumentClient(new Uri("https://<ACCOUNTNAME>.documents.azure.com:443/"), "<PRIMARYKEY>"))
                 {
                     Console.Write(client.ServiceEndpoint);
                     //2) get the database self link
